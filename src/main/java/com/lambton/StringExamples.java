@@ -71,23 +71,20 @@ public class StringExamples {
         String value = String.valueOf(str);
         System.out.println(value);
 
-        String input = " welcome to toronto";
-
-        int n = 1;
-
-        for (int i = 0; i <= input.length(); i++)
+        String str1 = "welcometotoronto";
+        int k = 0;
+        for (int i=0; k<str1.length(); i++)
         {
-            for (int j = 1; j <= i; j++)
+            for (int j=0; j<i; j++)
             {
-                System.out.print(input.charAt(i));
-
-                n++;
+                if (k < str1.length())
+                {
+                    System.out.print(str1.charAt(k++));
+                }
             }
-
-
-
-
+            System.out.println();
         }
+
 
     }
 }
